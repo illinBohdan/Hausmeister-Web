@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=\, initial-scale=1.0" />
@@ -10,11 +10,11 @@
       <nav>
         <!-- лого -->
         <ul>
-          <li><a href="#">Über uns</a></li>
-          <li><a href="#">Unsere Leistungen</a></li>
-          <li><a href="#">Ihre Vorteile</a></li>
-          <li><a href="#">Unsere Referenzen</a></li>
-          <li><a href="#">Kontakt aufnehmen</a></li>
+          <li><a href="#uber_uns">Über uns</a></li>
+          <li><a href="#leistungen">Unsere Leistungen</a></li>
+          <li><a href="#vorteile">Ihre Vorteile</a></li>
+          <li><a href="#referenzen">Unsere Referenzen</a></li>
+          <li><a href="#kontakt">Kontakt aufnehmen</a></li>
         </ul>
       </nav>
     </header>
@@ -28,7 +28,7 @@
         <!--Кнопка заявки-->
         <button type="button">Jetzt unverbindliches Angebot anfordern</button>
       </section>
-      <section>
+      <section id="uber_uns">
         <h2>Über uns</h2>
         <p>
           Mit unserem professionellen Hausmeister- und Renovierungsservice
@@ -61,7 +61,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section id="leistungen">
         <h2>Unsere Leistungen</h2>
         <p>
           Von der Gartenpflege über professionelle Renovierungsarbeiten bis hin
@@ -126,7 +126,7 @@
           <li></li>
         </ul>
       </section>
-      <section>
+      <section id="vorteile">
         <h2>Ihre Vorteile</h2>
         <p>
           Vertrauen Sie auf einen professionellen Partner, der Qualität,
@@ -155,14 +155,82 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section id="referenzen">
         <h2>Unsere Referenzen</h2>
       </section>
-      <section>
+      <section id="kontakt">
         <h2>Kontakt aufnehmen</h2>
+        <p>
+          Haben Sie Fragen oder möchten Sie ein unverbindliches Angebot?
+          Kontaktieren Sie uns – wir freuen uns auf Ihre Nachricht!
+        </p>
+        <h3>Kontaktinformationen</h3>
+        <ul>
+          <li>
+            <h4>Telefon</h4>
+            +49 123 456 7890
+          </li>
+          <li>
+            <h4>E-Mail</h4>
+            info@hausmeister-service.de
+          </li>
+          <li>
+            <h4>Adresse</h4>
+            Musterstraße 123 12345 Berlin, Deutschland
+          </li>
+          <li>
+            <h4>Öffnungszeiten</h4>
+            Mo - Fr: 08:00 - 18:00 Uhr Sa: 09:00 - 14:00 Uhr So: Nach
+            Vereinbarung
+          </li>
+        </ul>
+        <h3>Anfrage senden</h3>
+        <form action="submit">
+          Name *
+          <input type="text" />
+          E-Mail
+          <input type="text" />
+          Telefon *
+          <input type="text" />
+          Beschreibung der Arbeit *
+          <input type="text" />
+          <button type="submit">Anfrage absenden</button>
+          <p>* Pflichtfelder. Ihre Daten werden vertraulich behandelt.</p>
+        </form>
       </section>
     </main>
-    <footer></footer>
-    Hello world !
+    <footer>
+      <h3>Hausmeister- & Renovierungsservice</h3>
+      <p>
+        Ihr zuverlässiger Partner für professionelle Hausmeisterdienste und
+        Renovierungsarbeiten in Deutschland.
+      </p>
+      <nav>
+        <ul>
+          <li><a href="#uber_uns">Über uns</a></li>
+          <li><a href="#leistungen">Unsere Leistungen</a></li>
+          <li><a href="#vorteile">Ihre Vorteile</a></li>
+          <li><a href="#referenzen">Unsere Referenzen</a></li>
+          <li><a href="#kontakt">Kontakt aufnehmen</a></li>
+        </ul>
+      </nav>
+
+      <h3>Kontakt</h3>
+      <address>
+        <ul>
+          <li><a href="tel:+491234567890">+49 123 456 7890</a></li>
+          <li>
+            <a href="mailto:info@hausmeister-service.de"
+              >info@hausmeister-service.de</a
+            >
+          </li>
+          <li>
+            <a href="https://maps.app.goo.gl/4WCpX9fXpPRpgE5r8" target="_blank">
+              Musterstraße 123 12345 Berlin</a>
+          </li>
+        </ul>
+      </address>
+      <p>&copy; 2026 Hausmeister- & Renovierungsservice. Alle Rechte vorbehalten.</p>
+    </footer>
   </body>
 </html>
