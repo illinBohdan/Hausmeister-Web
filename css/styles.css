@@ -1,0 +1,288 @@
+/* inter-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v20-latin-regular.woff2") format("woff2");
+}
+/* inter-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/inter-v20-latin-500.woff2") format("woff2");
+}
+/* inter-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/inter-v20-latin-600.woff2") format("woff2");
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-v20-latin-700.woff2") format("woff2");
+}
+
+:root {
+  --primary-color-white: #f5f5f5;
+  --primary-color-text: #364153;
+  --primary-red-dark: #f54900;
+  --primary-red-light: #ff8904;
+  --color-link: #d1d5dc;
+  --color-white: #ffffff;
+  --color-h: #101828;
+  --color-in-red: #ffedd4;
+  --color-under-form: #6a7282;
+}
+
+/* ----------------------------------BASE ------------------------------------*/
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.56;
+  background-color: var(--primary-color-white);
+  color: var(--primary-color-text);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  color: var(--color-h);
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*---------------------------------------- BUTTON--------------------------------------- */
+
+.hero-button-red {
+  border-radius: 10px;
+  width: 397px;
+  height: 62px;
+  border: none;
+  background: var(--primary-red-light);
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.hero-button-red:hover {
+  background: var(--primary-red-dark);
+}
+
+.hero-button-call {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 156%;
+  color: var(--color-white);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 1px;
+  width: 200px;
+  height: 62px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.hero-button-call:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.button-under-form{
+border-radius: 10px;
+width: 520px;
+height: 56px;
+border: none;
+background: var(--primary-red-light);
+font-weight: 600;
+font-size: 16px;
+line-height: 1.5;
+text-align: center;
+color: var(--color-white);
+}
+
+.button-under-form:hover{
+  background: var(--primary-red-dark);
+}
+
+/*--------------------------------------------- LINK------------------------------------------ */
+
+a {
+  color: var(--color-link);
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-red-light);
+}
+/* ------------------------------- common to all ----------------------------------------- */
+
+.text-after-h2 {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* ------------------------------- HERO SECTION ----------------------------------------- */
+
+.hero-section {
+  background-image:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%),
+    url(../images/hero_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 944px;
+}
+
+.hero-tittle {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.25;
+  color: var(--color-white);
+}
+
+.hero-text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.3;
+  color: var(--color-white);
+}
+
+/* ------------------------- UBER UNS SECTION ---------------------------------- */
+
+.uber-uns-advantages {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--color-h);
+}
+
+.uber-uns-advantages-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* ------------------------- UNSERE LEISTUNGEN ---------------------------------- */
+
+.unsere-leistungen-h3 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  color: var(--color-h);
+}
+
+.unsere-leistungen-after-h3 {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.unsere-leistungen h4 {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color-h);
+}
+
+.unsere-leistungen h4 + p {
+  line-height: 1.4;
+}
+
+/* ------------------------- Ihre Vorteile ---------------------------------- */
+
+.vorteile {
+  background: linear-gradient(135deg, #f54900 0%, #ca3500 100%);
+}
+
+.vorteile h2 {
+  color: var(--color-white);
+}
+
+.vorteile p {
+  color: var(--color-in-red);
+}
+
+.vorteile h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.vorteile h3 + p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* ------------------------- KONTAKT SECTION ---------------------------------- */
+
+.kontakt h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.3;
+  color: var(--color-h);
+}
+
+.kontakt h4 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-h);
+}
+
+.kontakt h4 + p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.kontakt label {
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.text-under-form {
+  line-height: 1.4;
+  text-align: center;
+  color: var(--color-under-form);
+}
+
+/* ------------------------- FOOTER ---------------------------------- */
+
+footer {
+  background: #101828;
+}
+
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--color-white);
+}
+
+footer h4 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-white);
+}
+
+footer p {
+  line-height: 1.4;
+  color: var(--color-link);
+}
