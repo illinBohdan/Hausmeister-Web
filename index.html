@@ -9,16 +9,18 @@
   <body>
     <header>
       <div class="conteiner">
-        <nav>
-          <!-- лого -->
-          <ul>
-            <li><a class="link" href="#uber_uns">Über uns</a></li>
-            <li><a class="link" href="#leistungen">Unsere Leistungen</a></li>
-            <li><a class="link" href="#vorteile">Ihre Vorteile</a></li>
-            <li><a class="link" href="#referenzen">Unsere Referenzen</a></li>
-            <li><a class="link" href="#kontakt">Kontakt aufnehmen</a></li>
-          </ul>
-        </nav>
+        <div class="heder-flex">
+          <a href="/"><img src="./images/Logo.svg" alt="logo of site" /></a>
+          <nav>
+            <ul class="top-menu">
+              <li><a class="link" href="#uber_uns">Über uns</a></li>
+              <li><a class="link" href="#leistungen">Unsere Leistungen</a></li>
+              <li><a class="link" href="#vorteile">Ihre Vorteile</a></li>
+              <li><a class="link" href="#referenzen">Unsere Referenzen</a></li>
+              <li><a class="link" href="#kontakt">Kontakt aufnehmen</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
@@ -38,10 +40,10 @@
           <button class="hero-button-call" type="button">Jetzt anrufen</button>
         </div>
       </section>
-      <section class="section" id="uber_uns">
-        <div class="conteiner">
-          <h2>Über uns</h2>
-          <p class="text-after-h2">
+      <section class="section-uber-uns section" id="uber_uns">
+        <div class="conteiner conteiner-uber-uns">
+          <h2 class="section-title">Über uns</h2>
+          <p class="text-after-h2 text-uber-uns">
             Mit unserem professionellen Hausmeister- und Renovierungsservice
             bieten wir Ihnen umfassende Lösungen für Ihr Zuhause oder Ihre
             Immobilie. Wir legen großen Wert auf Qualität, Termintreue und einen
@@ -49,27 +51,27 @@
             Seite – von kleinen Reparaturen bis hin zu umfangreichen
             Renovierungsarbeiten.
           </p>
-          <ul>
-            <li>
+          <ul class="uber-uns-list">
+            <li class="box-for-advantages">
               <h3 class="uber-uns-advantages">Hohe Qualität</h3>
               <p class="uber-uns-advantages-text">
                 Professionelle Ausführung aller Arbeiten nach deutschen
                 Standards
               </p>
             </li>
-            <li>
+            <li class="box-for-advantages">
               <h3 class="uber-uns-advantages">Termintreue</h3>
               <p class="uber-uns-advantages-text">
                 Pünktliche und zuverlässige Fertigstellung Ihrer Projekte
               </p>
             </li>
-            <li>
+            <li class="box-for-advantages">
               <h3 class="uber-uns-advantages">Sauberkeit</h3>
               <p class="uber-uns-advantages-text">
                 Akkurate Arbeit mit vollständiger Reinigung nach Abschluss
               </p>
             </li>
-            <li>
+            <li class="box-for-advantages">
               <h3 class="uber-uns-advantages">Erfahrung</h3>
               <p class="uber-uns-advantages-text">
                 Langjährige Expertise in Hausmeister- und Renovierungsarbeiten
@@ -80,80 +82,88 @@
       </section>
       <section class="section unsere-leistungen" id="leistungen">
         <div class="conteiner">
-          <h2>Unsere Leistungen</h2>
+          <h2 class="section-title">Unsere Leistungen</h2>
           <p class="text-after-h2">
             Von der Gartenpflege über professionelle Renovierungsarbeiten bis
             hin zur Möbelmontage - wir bieten Ihnen alle Dienstleistungen rund
             um Haus und Garten aus einer Hand.
           </p>
-          <h3 class="unsere-leistungen-h3">Hausmeister- & Gartenpflege</h3>
-          <p class="unsere-leistungen-after-h3">
-            Professionelle Pflege für Ihr Grundstück und Gebäude
-          </p>
-          <ul>
-            <li>
-              <h4>Gartenpflege</h4>
-              <p>Rasenmähen, Heckenschnitt und Grünflächenpflege</p>
-            </li>
-            <li>
-              <h4>Winterdienst</h4>
-              <p>Schneeräumung, Streuen und Gebäudereinigung</p>
-            </li>
-            <li>
-              <h4>Mülltonnenservice</h4>
-              <p>Müllentsorgung und Objektüberwachung</p>
-            </li>
-            <li>
-              <h4>Kleine Instandsetzungen</h4>
-              <p>Lampenwechsel, Schlossaustausch und Kleinreparaturen</p>
-            </li>
-          </ul>
-          <h3 class="unsere-leistungen-h3">Renovierungsarbeiten</h3>
-          <p class="unsere-leistungen-after-h3">
-            Fachgerechte Renovierung nach HWK-Standard B1/B2
-          </p>
-          <ul>
-            <li>
-              <h4>Bodenverlegung</h4>
-              <p>Laminat, Vinyl, PVC und Fertigparkett professionell verlegt</p>
-            </li>
-            <li>
-              <h4>Fliesenarbeiten</h4>
-              <p>Keramikfliesen, Mosaik und Platten für Innenräume</p>
-            </li>
-            <li>
-              <h4>Maler & Tapezierarbeiten</h4>
-              <p>Wandanstrich und Tapetenverlegung für neue Optik</p>
-            </li>
-            <li>
-              <h4>Trockenbau</h4>
-              <p>Gipskartonmontage und Trennwände nach Maß</p>
-            </li>
-          </ul>
-          <h3 class="unsere-leistungen-h3">Montage- & Aufbauservice</h3>
-          <p class="unsere-leistungen-after-h3">
-            Fachgerechte Installation und Montage
-          </p>
-          <ul>
-            <li>
-              <h4>Möbelmontage</h4>
-              <p>Aufbau von IKEA-Küchen, Schränken und Möbeln aller Art</p>
-            </li>
-            <li>
-              <h4>Einbau von Baufertigteilen</h4>
-              <p>Installation von genormten Fenstern, Türen und Zargen</p>
-            </li>
-            <li>
-              <h4>Montagearbeiten</h4>
-              <p>Gardinenstangen, Lampen, Spiegel und TV-Halterungen</p>
-            </li>
-            <li></li>
-          </ul>
+          <div class="haus-garden-list-bg">
+            <h3 class="unsere-leistungen-h3">Hausmeister- & Gartenpflege</h3>
+            <p class="unsere-leistungen-after-h3">
+              Professionelle Pflege für Ihr Grundstück und Gebäude
+            </p>
+            <ul class="haus-garden-list">
+              <li>
+                <h4>Gartenpflege</h4>
+                <p>Rasenmähen, Heckenschnitt und Grünflächenpflege</p>
+              </li>
+              <li>
+                <h4>Winterdienst</h4>
+                <p>Schneeräumung, Streuen und Gebäudereinigung</p>
+              </li>
+              <li>
+                <h4>Mülltonnenservice</h4>
+                <p>Müllentsorgung und Objektüberwachung</p>
+              </li>
+              <li>
+                <h4>Kleine Instandsetzungen</h4>
+                <p>Lampenwechsel, Schlossaustausch und Kleinreparaturen</p>
+              </li>
+            </ul>
+          </div>
+          <div class="renovirung-list-bg">
+            <h3 class="unsere-leistungen-h3">Renovierungsarbeiten</h3>
+            <p class="unsere-leistungen-after-h3">
+              Fachgerechte Renovierung nach HWK-Standard B1/B2
+            </p>
+            <ul class="renovirung-list">
+              <li>
+                <h4>Bodenverlegung</h4>
+                <p>
+                  Laminat, Vinyl, PVC und Fertigparkett professionell verlegt
+                </p>
+              </li>
+              <li>
+                <h4>Fliesenarbeiten</h4>
+                <p>Keramikfliesen, Mosaik und Platten für Innenräume</p>
+              </li>
+              <li>
+                <h4>Maler & Tapezierarbeiten</h4>
+                <p>Wandanstrich und Tapetenverlegung für neue Optik</p>
+              </li>
+              <li>
+                <h4>Trockenbau</h4>
+                <p>Gipskartonmontage und Trennwände nach Maß</p>
+              </li>
+            </ul>
+          </div>
+          <div class="montage-list-bg">
+            <h3 class="unsere-leistungen-h3">Montage- & Aufbauservice</h3>
+            <p class="unsere-leistungen-after-h3">
+              Fachgerechte Installation und Montage
+            </p>
+            <ul class="montage-list">
+              <li>
+                <h4>Möbelmontage</h4>
+                <p>Aufbau von IKEA-Küchen, Schränken und Möbeln aller Art</p>
+              </li>
+              <li>
+                <h4>Einbau von Baufertigteilen</h4>
+                <p>Installation von genormten Fenstern, Türen und Zargen</p>
+              </li>
+              <li>
+                <h4>Montagearbeiten</h4>
+                <p>Gardinenstangen, Lampen, Spiegel und TV-Halterungen</p>
+              </li>
+              <li></li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="section vorteile" id="vorteile">
         <div class="conteiner">
-          <h2>Ihre Vorteile</h2>
+          <h2 class="section-title">Ihre Vorteile</h2>
           <p class="text-after-h2 vorteile-color-p">
             Vertrauen Sie auf einen professionellen Partner, der Qualität,
             Transparenz und Kundenzufriedenheit in den Mittelpunkt stellt.
@@ -192,7 +202,7 @@
       </section>
       <section class="section" id="referenzen">
         <div class="conteiner">
-          <h2>Unsere Referenzen</h2>
+          <h2 class="section-title">Unsere Referenzen</h2>
           <p class="text-after-h2">
             Überzeugen Sie sich von der Qualität unserer Arbeit. Hier sehen Sie
             eine Auswahl erfolgreich abgeschlossener Projekte.
@@ -201,7 +211,7 @@
       </section>
       <section class="section kontakt" id="kontakt">
         <div class="conteiner">
-          <h2>Kontakt aufnehmen</h2>
+          <h2 class="section-title">Kontakt aufnehmen</h2>
           <p class="text-after-h2">
             Haben Sie Fragen oder möchten Sie ein unverbindliches Angebot?
             Kontaktieren Sie uns – wir freuen uns auf Ihre Nachricht!

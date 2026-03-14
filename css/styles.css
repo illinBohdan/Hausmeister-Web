@@ -41,6 +41,13 @@
   --color-h: #101828;
   --color-in-red: #ffedd4;
   --color-under-form: #6a7282;
+  --color-lite-grey: #f9fafb;
+  --color-green-for-list: #f0fdf4;
+  --bordercolor-for-green-list: #b9f8cf;
+  --color-orange-for-list: #fff7ed;
+  --bordercolor-for-orange-list: #ffd6a8;
+  --color-blue-for-list: #eff6ff;
+  --bordercolor-for-blue-list: #bedbff;
 }
 
 /* ----------------------------------BASE ------------------------------------*/
@@ -49,12 +56,12 @@
   box-sizing: border-box;
 }
 
-.section{
+.section {
   padding: 48px 0;
   border: 2px burlywood solid;
 }
 
-.conteiner{
+.conteiner {
   width: 100%;
   max-width: 1344px;
   margin: 0 auto;
@@ -76,7 +83,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.56;
-  background-color: var(--primary-color-white);
+  background-color: var(--color-white);
   color: var(--primary-color-text);
 }
 
@@ -164,6 +171,25 @@ a:hover {
   text-align: center;
 }
 
+.section-title {
+  margin-bottom: 44px;
+}
+
+/* ------------------------------- HEADER SECTION ----------------------------------------- */
+.heder-flex {
+  display: flex;
+  align-items: center;
+}
+
+.heder-flex nav {
+  flex: 1;
+}
+
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* ------------------------------- HERO SECTION ----------------------------------------- */
 
 .hero-section {
@@ -178,7 +204,7 @@ a:hover {
   padding: 268px 0;
 }
 
-.conteiner-hero{
+.conteiner-hero {
   width: 100%;
   height: 100%;
   max-width: 800px;
@@ -188,6 +214,7 @@ a:hover {
 }
 
 .hero-tittle {
+  margin-bottom: 24px;
   font-weight: 700;
   font-size: 60px;
   line-height: 1.25;
@@ -195,6 +222,7 @@ a:hover {
 }
 
 .hero-text {
+  margin-bottom: 32px;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.3;
@@ -203,16 +231,44 @@ a:hover {
 
 /* ------------------------- UBER UNS SECTION ---------------------------------- */
 
+.section-uber-uns {
+  padding-top: 80px;
+}
+
+.conteiner-uber-uns {
+  background-color: var(--color-lite-grey);
+}
+
+.text-uber-uns {
+  margin-bottom: 37px;
+}
+
+.uber-uns-list {
+  display: flex;
+  gap: 32px;
+}
+
+.box-for-advantages {
+  border-radius: 10px;
+  max-width: 280px;
+  box-shadow:
+    0 2px 4px -2px rgba(0, 0, 0, 0.1),
+    0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  background: var(--color-white);
+}
+
 .uber-uns-advantages {
   font-weight: 600;
   font-size: 20px;
   line-height: 140%;
   color: var(--color-h);
+  text-align: center;
 }
 
 .uber-uns-advantages-text {
   font-size: 16px;
   line-height: 1.5;
+  text-align: center;
 }
 
 /* ------------------------- UNSERE LEISTUNGEN ---------------------------------- */
@@ -237,6 +293,71 @@ a:hover {
 
 .unsere-leistungen h4 + p {
   line-height: 1.4;
+  text-align: center;
+}
+
+.haus-garden-list-bg {
+  background-color: var(--color-green-for-list);
+  border: 2px solid var(--bordercolor-for-green-list);
+  border-radius: 16px;
+}
+
+.haus-garden-list {
+  display: flex;
+  gap: 24px;
+}
+
+.haus-garden-list h4 {
+  text-align: center;
+}
+
+.haus-garden-list li {
+  border-radius: 10px;
+  max-width: 269px;
+  box-shadow:
+    0 1px 2px -1px rgba(0, 0, 0, 0.1),
+    0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  background: var(--color-white);
+}
+
+.renovirung-list-bg {
+  background-color: var(--color-orange-for-list);
+  border: 2px solid var(--bordercolor-for-orange-list);
+  border-radius: 16px;
+}
+
+.renovirung-list {
+  display: flex;
+  gap: 24px;
+}
+
+.renovirung-list li {
+  border-radius: 10px;
+  max-width: 269px;
+  box-shadow:
+    0 1px 2px -1px rgba(0, 0, 0, 0.1),
+    0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  background: var(--color-white);
+}
+
+.montage-list-bg {
+  border: 2px solid var(--bordercolor-for-blue-list);
+  border-radius: 16px;
+  background: var(--color-blue-for-list);
+}
+
+.montage-list {
+  display: flex;
+  gap: 24px;
+}
+
+.montage-list li{
+  border-radius: 10px;
+  max-width: 195px;
+  box-shadow:
+    0 1px 2px -1px rgba(0, 0, 0, 0.1),
+    0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  background: #fff;
 }
 
 /* ------------------------- Ihre Vorteile ---------------------------------- */
