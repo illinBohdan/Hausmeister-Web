@@ -57,15 +57,15 @@
 }
 
 .section {
-  padding: 48px 0;
-  border: 2px burlywood solid;
+  padding: 80px 0;
+  /* border: 2px burlywood solid; */
 }
 
 .conteiner {
   width: 100%;
   max-width: 1344px;
   margin: 0 auto;
-  border: 2px blue solid;
+  /* border: 2px blue solid; */
   padding: 0 32px;
 }
 
@@ -231,10 +231,6 @@ a:hover {
 
 /* ------------------------- UBER UNS SECTION ---------------------------------- */
 
-.section-uber-uns {
-  padding-top: 80px;
-}
-
 .conteiner-uber-uns {
   background-color: var(--color-lite-grey);
 }
@@ -266,6 +262,8 @@ a:hover {
 }
 
 .uber-uns-advantages-text {
+  padding: 8px 24px 24px;
+  margin: 0;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
@@ -274,13 +272,21 @@ a:hover {
 /* ------------------------- UNSERE LEISTUNGEN ---------------------------------- */
 
 .unsere-leistungen-h3 {
+  padding: 34px 34px 0;
+  margin-bottom: 8px;
   font-weight: 700;
   font-size: 30px;
   line-height: 1.2;
   color: var(--color-h);
 }
 
+.text-unsere-leisungen{
+  margin-bottom: 37px;
+}
+
 .unsere-leistungen-after-h3 {
+  padding: 0 34px;
+  margin-bottom: 32px;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -297,12 +303,15 @@ a:hover {
 }
 
 .haus-garden-list-bg {
+  margin-bottom: 48px;
   background-color: var(--color-green-for-list);
   border: 2px solid var(--bordercolor-for-green-list);
   border-radius: 16px;
 }
 
 .haus-garden-list {
+  margin: 0;
+  padding: 0 34px 34px;
   display: flex;
   gap: 24px;
 }
@@ -321,12 +330,15 @@ a:hover {
 }
 
 .renovirung-list-bg {
+  margin-bottom: 48px;
   background-color: var(--color-orange-for-list);
   border: 2px solid var(--bordercolor-for-orange-list);
   border-radius: 16px;
 }
 
 .renovirung-list {
+   margin: 0;
+  padding: 0 34px 34px;
   display: flex;
   gap: 24px;
 }
@@ -347,13 +359,15 @@ a:hover {
 }
 
 .montage-list {
+   margin: 0;
+  padding: 0 34px 34px;
   display: flex;
   gap: 24px;
 }
 
 .montage-list li{
   border-radius: 10px;
-  max-width: 195px;
+  max-width: 269px;
   box-shadow:
     0 1px 2px -1px rgba(0, 0, 0, 0.1),
     0 1px 3px 0 rgba(0, 0, 0, 0.1);
@@ -382,13 +396,37 @@ a:hover {
   color: var(--color-white);
 }
 
+.vorteile-text{
+  margin:0 auto 64px;
+  max-width: 768px;
+  
+}
+
 .vorteile h3 + p {
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
 }
 
+.vorteile-list{
+  margin: 0;
+  padding: 0 34px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.vorteile-list li{
+  max-width: 280px;
+  
+}
+
 /* ------------------------- KONTAKT SECTION ---------------------------------- */
+
+.kontakt-text{
+  max-width: 735px;
+  margin:0 auto 65px;
+}
 
 .kontakt h3 {
   font-weight: 600;
@@ -414,16 +452,32 @@ a:hover {
   line-height: 1.4;
 }
 
+.kontact-flex{
+  display: flex;
+}
+
 .text-under-form {
   line-height: 1.4;
   text-align: center;
   color: var(--color-under-form);
 }
 
+
 /* ------------------------- FOOTER ---------------------------------- */
 
 footer {
   background: #101828;
+}
+
+.footer-flex{
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 32px 0;
+  margin-bottom: 32px;
+}
+
+.footer-flex div{
+  flex: 1;
 }
 
 footer h3 {
@@ -440,7 +494,16 @@ footer h4 {
   color: var(--color-white);
 }
 
+.servise-info{
+  padding:0 32px 48px;
+}
+
 footer p {
   line-height: 1.4;
   color: var(--color-link);
+}
+
+.servise-info-text{
+  padding: 18px 0;
+  margin: 0;
 }
