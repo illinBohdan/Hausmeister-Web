@@ -153,6 +153,19 @@ ul {
   background: var(--primary-red-dark);
 }
 
+/*--------------------------------------------- ICONS------------------------------------------ */
+
+.logo-size{
+  width: 56px;
+  height: 56px;
+margin: 24px 0 16px 24px;
+}
+
+
+
+
+
+
 /*--------------------------------------------- LINK------------------------------------------ */
 
 a {
@@ -267,10 +280,11 @@ background-color: var(--primary-red-dark);
   line-height: 140%;
   color: var(--color-h);
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .uber-uns-advantages-text {
-  padding: 8px 24px 24px;
+  padding: 0 24px 24px;
   margin: 0;
   font-size: 16px;
   line-height: 1.5;
