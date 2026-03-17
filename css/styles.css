@@ -102,6 +102,8 @@ ul {
 /*---------------------------------------- BUTTON--------------------------------------- */
 
 .hero-button-red {
+  margin-right: 16px;
+  padding: 16px 20px 18px;
   border-radius: 10px;
   width: 397px;
   height: 62px;
@@ -155,11 +157,31 @@ ul {
 
 /*--------------------------------------------- ICONS------------------------------------------ */
 
+.hero-icon-phone{
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+
+}
+
 .logo-size{
   width: 56px;
   height: 56px;
 margin: 24px 0 16px 24px;
 }
+
+.footer-icons-address{
+  width: 16px;
+  height: 16px;
+}
+
+.footer-icons-social{
+  margin-right: 12px;
+  width: 40px;
+  height: 40px;
+}
+
+
 
 
 
@@ -314,12 +336,16 @@ background-color: var(--primary-red-dark);
 }
 
 .unsere-leistungen h4 {
+  margin-bottom: 8px;
   font-weight: 600;
   font-size: 18px;
   color: var(--color-h);
+  text-align: center;
 }
 
 .unsere-leistungen h4 + p {
+  padding: 0 24px 24px;
+  margin: 0;
   line-height: 1.4;
   text-align: center;
 }
@@ -336,10 +362,6 @@ background-color: var(--primary-red-dark);
   padding: 0 34px 34px;
   display: flex;
   gap: 24px;
-}
-
-.haus-garden-list h4 {
-  text-align: center;
 }
 
 .haus-garden-list li {
@@ -415,6 +437,7 @@ background-color: var(--primary-red-dark);
 }
 
 .vorteile h3 {
+  margin-bottom: 12px;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.4;
@@ -439,11 +462,14 @@ background-color: var(--primary-red-dark);
   padding: 0 34px;
   display: flex;
   justify-content: space-between;
+  gap: 34px;
 }
 
 
 .vorteile-list li{
   max-width: 280px;
+  align-items: center;
+  text-align: center;
   
 }
 
@@ -506,7 +532,16 @@ footer {
   flex: 1;
 }
 
+nav li{
+  margin-bottom: 8px;
+}
+
+address li{
+  margin-bottom: 12px;
+}
+
 footer h3 {
+  margin-bottom: 16px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.4;
@@ -514,6 +549,7 @@ footer h3 {
 }
 
 footer h4 {
+  margin-bottom: 16px;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
