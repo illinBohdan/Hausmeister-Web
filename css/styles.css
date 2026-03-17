@@ -170,6 +170,13 @@ ul {
 margin: 24px 0 16px 24px;
 }
 
+.kontakt-icons{
+  margin-right: 16px;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0
+}
+
 .footer-icons-address{
   width: 16px;
   height: 16px;
@@ -180,12 +187,6 @@ margin: 24px 0 16px 24px;
   width: 40px;
   height: 40px;
 }
-
-
-
-
-
-
 
 
 /*--------------------------------------------- LINK------------------------------------------ */
@@ -488,6 +489,7 @@ background-color: var(--primary-red-dark);
 }
 
 .kontakt h4 {
+  margin-bottom: 4px;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
@@ -495,8 +497,10 @@ background-color: var(--primary-red-dark);
 }
 
 .kontakt h4 + p {
+  margin-bottom: 24px;
   font-size: 16px;
   line-height: 1.5;
+  max-width: 224px;
 }
 
 .kontakt label {
@@ -505,6 +509,15 @@ background-color: var(--primary-red-dark);
 }
 
 .kontact-flex{
+  display: flex;
+  gap: 48px;
+}
+
+.kontakt-info-and-form {
+  flex: 1; 
+}
+
+.kontact-flex li{
   display: flex;
 }
 
