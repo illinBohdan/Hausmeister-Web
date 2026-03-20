@@ -157,37 +157,49 @@ ul {
 
 /*--------------------------------------------- ICONS------------------------------------------ */
 
-.hero-icon-phone{
+.icon-logo{
+  width: 180px;
+  height: 32px;
+}
+
+
+.hero-icon-phone {
   margin-right: 8px;
   width: 20px;
   height: 20px;
-
 }
 
-.logo-size{
+.icon-mouse {
+  position: absolute;
+  left: 50%;
+  bottom: 42px;
+  width: 40px;
+  height: 50px;
+}
+
+.logo-size {
   width: 56px;
   height: 56px;
-margin: 24px 0 16px 24px;
+  margin: 24px 0 16px 24px;
 }
 
-.kontakt-icons{
+.kontakt-icons {
   margin-right: 16px;
   width: 48px;
   height: 48px;
-  flex-shrink: 0
+  flex-shrink: 0;
 }
 
-.footer-icons-address{
+.footer-icons-address {
   width: 16px;
   height: 16px;
 }
 
-.footer-icons-social{
+.footer-icons-social {
   margin-right: 12px;
   width: 40px;
   height: 40px;
 }
-
 
 /*--------------------------------------------- LINK------------------------------------------ */
 
@@ -208,18 +220,29 @@ a:hover {
 }
 
 .section-title {
-  margin-bottom: 44px;
+  margin-bottom: 24px;
 }
 
-.section-title::after{
+.section-title::after {
+  margin-top: 16px;
+  position: relative;
+  left: calc(100% / 2 - 48px);
   display: block;
-  content: '';
+  content: "";
   width: 96px;
-height: 4px;
-background-color: var(--primary-red-dark);
+  height: 4px;
+  background-color: var(--primary-red-dark);
 }
 
 /* ------------------------------- HEADER SECTION ----------------------------------------- */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
 .heder-flex {
   display: flex;
   align-items: center;
@@ -235,8 +258,8 @@ background-color: var(--primary-red-dark);
 }
 
 /* ------------------------------- HERO SECTION ----------------------------------------- */
-
 .hero-section {
+  position: relative;
   background-image:
     linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%),
     url(../images/hero_bg.jpg);
@@ -325,7 +348,7 @@ background-color: var(--primary-red-dark);
   color: var(--color-h);
 }
 
-.text-unsere-leisungen{
+.text-unsere-leisungen {
   margin-bottom: 37px;
 }
 
@@ -382,7 +405,7 @@ background-color: var(--primary-red-dark);
 }
 
 .renovirung-list {
-   margin: 0;
+  margin: 0;
   padding: 0 34px 34px;
   display: flex;
   gap: 24px;
@@ -404,13 +427,13 @@ background-color: var(--primary-red-dark);
 }
 
 .montage-list {
-   margin: 0;
+  margin: 0;
   padding: 0 34px 34px;
   display: flex;
   gap: 24px;
 }
 
-.montage-list li{
+.montage-list li {
   border-radius: 10px;
   max-width: 269px;
   box-shadow:
@@ -434,7 +457,7 @@ background-color: var(--primary-red-dark);
 }
 
 .section-title.another-color::after {
-   background-color: var(--color-white);
+  background-color: var(--color-white);
 }
 
 .vorteile h3 {
@@ -446,10 +469,9 @@ background-color: var(--primary-red-dark);
   color: var(--color-white);
 }
 
-.vorteile-text{
-  margin:0 auto 64px;
+.vorteile-text {
+  margin: 0 auto 64px;
   max-width: 768px;
-  
 }
 
 .vorteile h3 + p {
@@ -458,7 +480,7 @@ background-color: var(--primary-red-dark);
   text-align: center;
 }
 
-.vorteile-list{
+.vorteile-list {
   margin: 0;
   padding: 0 34px;
   display: flex;
@@ -466,19 +488,17 @@ background-color: var(--primary-red-dark);
   gap: 34px;
 }
 
-
-.vorteile-list li{
+.vorteile-list li {
   max-width: 280px;
   align-items: center;
   text-align: center;
-  
 }
 
 /* ------------------------- KONTAKT SECTION ---------------------------------- */
 
-.kontakt-text{
+.kontakt-text {
   max-width: 735px;
-  margin:0 auto 65px;
+  margin: 0 auto 65px;
 }
 
 .kontakt h3 {
@@ -508,16 +528,16 @@ background-color: var(--primary-red-dark);
   line-height: 1.4;
 }
 
-.kontact-flex{
+.kontact-flex {
   display: flex;
   gap: 48px;
 }
 
 .kontakt-info-and-form {
-  flex: 1; 
+  flex: 1;
 }
 
-.kontact-flex li{
+.kontact-flex li {
   display: flex;
 }
 
@@ -527,29 +547,28 @@ background-color: var(--primary-red-dark);
   color: var(--color-under-form);
 }
 
-
 /* ------------------------- FOOTER ---------------------------------- */
 
 footer {
   background: #101828;
 }
 
-.footer-flex{
+.footer-flex {
   display: flex;
   justify-content: space-between;
   padding: 48px 32px 0;
   margin-bottom: 32px;
 }
 
-.footer-flex div{
+.footer-flex div {
   flex: 1;
 }
 
-nav li{
+nav li {
   margin-bottom: 8px;
 }
 
-address li{
+address li {
   margin-bottom: 12px;
 }
 
@@ -569,8 +588,8 @@ footer h4 {
   color: var(--color-white);
 }
 
-.servise-info{
-  padding:0 32px 48px;
+.servise-info {
+  padding: 0 32px 48px;
 }
 
 footer p {
@@ -578,7 +597,7 @@ footer p {
   color: var(--color-link);
 }
 
-.servise-info-text{
+.servise-info-text {
   padding: 18px 0;
   margin: 0;
 }
