@@ -157,11 +157,10 @@ ul {
 
 /*--------------------------------------------- ICONS------------------------------------------ */
 
-.icon-logo{
+.icon-logo {
   width: 180px;
   height: 32px;
 }
-
 
 .hero-icon-phone {
   margin-right: 8px;
@@ -175,6 +174,33 @@ ul {
   bottom: 42px;
   width: 40px;
   height: 50px;
+
+  animation: jumping 1s ease-in-out infinite;
+}
+
+@keyframes jumping {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-8px);
+  }
+  20% {
+    transform: translateY(-9px);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-9px); /* затримка 0.5s */
+  }
+
+  80% {
+    transform: translateY(-8px); /* затримка 0.5s */
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .logo-size {
