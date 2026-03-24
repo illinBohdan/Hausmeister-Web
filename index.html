@@ -10,9 +10,10 @@
     <header>
       <div class="container">
         <div class="heder-flex">
-          <a href="/"> <svg class="icon-logo">
+          <a href="/">
+            <svg class="icon-logo">
               <use href="./images/icons.svg#icon-logo"></use></svg
-            ></a>
+          ></a>
           <nav>
             <ul class="top-menu">
               <li><a class="link" href="#uber_uns">Über uns</a></li>
@@ -46,7 +47,7 @@
           </button>
         </div>
         <svg class="icon-mouse">
-          <use href="./images/icons.svg#icon-imouse" ></use>
+          <use href="./images/icons.svg#icon-imouse"></use>
         </svg>
       </section>
       <section class="section-uber-uns section" id="uber_uns">
@@ -327,13 +328,42 @@
                 </li>
               </ul>
             </div>
-            <div class="kontakt-info-and-form">
+            <div class="kontakt-info-and-form anfrage">
               <h3>Anfrage senden</h3>
-              <form action="submit">
-                <label>Name * <input type="text" /></label>
-                <label>E-Mail <input type="text" /></label>
-                <label>Telefon * <input type="text" /></label>
-                <label>Beschreibung der Arbeit * <input type="text" /></label>
+              <form name="contact-form" class="contact-form">
+                <label class="form-label" for="user-name"> Name * </label>
+                <input
+                  class="form-input"
+                  placeholder="Ihre Name"
+                  type="text"
+                  name="user-name"
+                  id="user-name"
+                />
+                <label class="form-label" for="user-email">E-Mail</label>
+                <input
+                  class="form-input"
+                  placeholder="Ihre Email"
+                  type="email"
+                  name="user-email"
+                  id="user-email"
+                />
+                <label class="form-label" for="user-phone">Telefon * </label>
+                <input
+                  class="form-input"
+                  placeholder="Ihre Handy"
+                  type="tel"
+                  name="user-phone"
+                  id="user-phone"
+                />
+                <label class="form-label" for="beschreibung"
+                  >Beschreibung der Arbeit *</label
+                >
+                <input
+                  class="form-input beschreibung"
+                  type="text"
+                  name="beschreibung"
+                  id="beschreibung"
+                />
                 <button class="button-under-form" type="submit">
                   Anfrage absenden
                 </button>

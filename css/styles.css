@@ -139,6 +139,7 @@ ul {
 }
 
 .button-under-form {
+  margin-bottom: 24px;
   border-radius: 10px;
   width: 520px;
   height: 56px;
@@ -183,20 +184,26 @@ ul {
     transform: translateY(0);
   }
   10% {
-    transform: translateY(-8px);
+    transform: translateY(-7px);
   }
   20% {
-    transform: translateY(-9px);
+    transform: translateY(-8px);
   }
   30% {
+    transform: translateY(-9px);
+  }
+  40% {
     transform: translateY(-10px);
   }
   60% {
-    transform: translateY(-9px); /* затримка 0.5s */
+    transform: translateY(-8px);
+  }
+  70% {
+    transform: translateY(-7px);
   }
 
   80% {
-    transform: translateY(-8px); /* затримка 0.5s */
+    transform: translateY(-6px);
   }
   100% {
     transform: translateY(0);
@@ -563,11 +570,45 @@ header {
   flex: 1;
 }
 
+
+
+.kontakt-info-and-form.anfrage{
+  background: var(--color-lite-grey);
+  padding: 32px;
+  border-radius: 16px;
+  
+}
+
 .kontact-flex li {
   display: flex;
 }
 
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-input {
+  padding: 16px;
+  margin-bottom: 24px;
+  min-width: 520px;
+  min-height: 50px;
+  border: 1px solid var(--color-link);
+  border-radius: 10px;
+}
+
+.form-input:focus{
+  border: 2px solid var(--primary-red-dark);
+  outline: none;
+}
+
+.form-input.beschreibung{
+  min-height: 146px;
+  margin-bottom: 30px;
+}
+
 .text-under-form {
+  margin-bottom: 0;
   line-height: 1.4;
   text-align: center;
   color: var(--color-under-form);
