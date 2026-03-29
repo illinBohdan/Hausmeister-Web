@@ -1,0 +1,74 @@
+.services {
+  
+  &__text {
+    margin-bottom: 37px;
+  }
+
+  &__title-list {
+    padding: 34px 34px 0;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.2;
+    color: var(--color-h);
+  }
+
+  &__subtitle-list {
+    padding: 0 34px;
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  &__card-title {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--color-h);
+    text-align: center;
+  }
+
+  &__card-text {
+    padding: 0 24px 24px;
+    margin: 0;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  &__lists {
+    margin: 0;
+    padding: 0 34px 34px;
+    display: flex;
+    gap: 24px;
+
+    & li {
+      border-radius: 10px;
+      max-width: 269px;
+      box-shadow:
+        0 1px 2px -1px rgba(0, 0, 0, 0.1),
+        0 1px 3px 0 rgba(0, 0, 0, 0.1);
+      background: var(--color-white);
+    }
+  }
+
+  &__lists-bg {
+    margin-bottom: 48px;
+    border-radius: 16px;
+
+    &.green {
+      background-color: var(--color-green-for-list);
+      border: 2px solid var(--bordercolor-for-green-list);
+    }
+
+    &.orange {
+      background-color: var(--color-orange-for-list);
+      border: 2px solid var(--bordercolor-for-orange-list);
+    }
+
+    &.blue {
+      margin-bottom: 0;
+      border: 2px solid var(--bordercolor-for-blue-list);
+      background: var(--color-blue-for-list);
+    }
+  }
+}

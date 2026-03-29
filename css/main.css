@@ -233,15 +233,9 @@ a:hover {
   color: var(--primary-red-light);
 }
 
-.text-after-h2 {
-  font-size: 18px;
-  text-align: center;
-}
-
 .section-title {
   margin-bottom: 24px;
 }
-
 .section-title::after {
   margin-top: 16px;
   position: relative;
@@ -252,30 +246,35 @@ a:hover {
   height: 4px;
   background-color: var(--primary-red-dark);
 }
+.section-title.light::after {
+  background-color: var(--color-white);
+}
 
-header {
+.section-text {
+  font-size: 18px;
+  text-align: center;
+}
+
+.header {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1;
 }
-
-.heder-flex {
+.header__container {
   display: flex;
   align-items: center;
 }
-
-.heder-flex nav {
+.header__nav {
   flex: 1;
 }
-
-.top-menu {
+.header__menu {
   display: flex;
   justify-content: space-between;
 }
 
-.hero-section {
+.hero {
   position: relative;
   background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%), url(../images/hero_bg.jpg);
   background-size: cover;
@@ -284,8 +283,7 @@ header {
   height: 944px;
   padding: 268px 0;
 }
-
-.container-hero {
+.hero__container {
   width: 100%;
   height: 100%;
   max-width: 800px;
@@ -293,16 +291,14 @@ header {
   margin: 0 auto;
   padding: 0 32px;
 }
-
-.hero-tittle {
+.hero__tittle {
   margin-bottom: 24px;
   font-weight: 700;
   font-size: 60px;
   line-height: 1.25;
   color: var(--color-white);
 }
-
-.hero-text {
+.hero__text {
   margin-bottom: 32px;
   font-weight: 400;
   font-size: 24px;
@@ -310,27 +306,23 @@ header {
   color: var(--color-white);
 }
 
-.section-uber-uns {
+.about {
   background-color: var(--color-lite-grey);
 }
-
-.text-uber-uns {
+.about__text {
   margin-bottom: 37px;
 }
-
-.uber-uns-list {
+.about__list {
   display: flex;
   gap: 32px;
 }
-
-.box-for-advantages {
+.about__box {
   border-radius: 10px;
   max-width: 280px;
   box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   background: var(--color-white);
 }
-
-.uber-uns-advantages {
+.about__box-title {
   font-weight: 600;
   font-size: 20px;
   line-height: 140%;
@@ -338,8 +330,7 @@ header {
   text-align: center;
   margin-bottom: 8px;
 }
-
-.uber-uns-advantages-text {
+.about__box-text {
   padding: 0 24px 24px;
   margin: 0;
   font-size: 16px;
@@ -347,7 +338,10 @@ header {
   text-align: center;
 }
 
-.unsere-leistungen-h3 {
+.services__text {
+  margin-bottom: 37px;
+}
+.services__title-list {
   padding: 34px 34px 0;
   margin-bottom: 8px;
   font-weight: 700;
@@ -355,112 +349,79 @@ header {
   line-height: 1.2;
   color: var(--color-h);
 }
-
-.text-unsere-leisungen {
-  margin-bottom: 37px;
-}
-
-.unsere-leistungen-after-h3 {
+.services__subtitle-list {
   padding: 0 34px;
   margin-bottom: 32px;
   font-size: 16px;
   line-height: 1.5;
 }
-
-.unsere-leistungen h4 {
+.services__card-title {
   margin-bottom: 8px;
   font-weight: 600;
   font-size: 18px;
   color: var(--color-h);
   text-align: center;
 }
-
-.unsere-leistungen h4 + p {
+.services__card-text {
   padding: 0 24px 24px;
   margin: 0;
   line-height: 1.4;
   text-align: center;
 }
-
-.haus-garden-list-bg {
+.services__lists {
+  margin: 0;
+  padding: 0 34px 34px;
+  display: flex;
+  gap: 24px;
+}
+.services__lists li {
+  border-radius: 10px;
+  max-width: 269px;
+  box-shadow: 0 1px 2px -1px rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  background: var(--color-white);
+}
+.services__lists-bg {
   margin-bottom: 48px;
+  border-radius: 16px;
+}
+.services__lists-bg.green {
   background-color: var(--color-green-for-list);
   border: 2px solid var(--bordercolor-for-green-list);
-  border-radius: 16px;
 }
-
-.haus-garden-list {
-  margin: 0;
-  padding: 0 34px 34px;
-  display: flex;
-  gap: 24px;
-}
-
-.haus-garden-list li {
-  border-radius: 10px;
-  max-width: 269px;
-  box-shadow: 0 1px 2px -1px rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  background: var(--color-white);
-}
-
-.renovirung-list-bg {
-  margin-bottom: 48px;
+.services__lists-bg.orange {
   background-color: var(--color-orange-for-list);
   border: 2px solid var(--bordercolor-for-orange-list);
-  border-radius: 16px;
 }
-
-.renovirung-list {
-  margin: 0;
-  padding: 0 34px 34px;
-  display: flex;
-  gap: 24px;
-}
-
-.renovirung-list li {
-  border-radius: 10px;
-  max-width: 269px;
-  box-shadow: 0 1px 2px -1px rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  background: var(--color-white);
-}
-
-.montage-list-bg {
+.services__lists-bg.blue {
+  margin-bottom: 0;
   border: 2px solid var(--bordercolor-for-blue-list);
-  border-radius: 16px;
   background: var(--color-blue-for-list);
 }
 
-.montage-list {
-  margin: 0;
-  padding: 0 34px 34px;
-  display: flex;
-  gap: 24px;
-}
-
-.montage-list li {
-  border-radius: 10px;
-  max-width: 269px;
-  box-shadow: 0 1px 2px -1px rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  background: #fff;
-}
-
-.vorteile {
+.advantages {
   background: linear-gradient(135deg, #f54900 0%, #ca3500 100%);
 }
-
-.vorteile h2 {
+.advantages__title {
   color: var(--color-white);
 }
-
-.vorteile p {
+.advantages__text {
+  margin: 0 auto 64px;
+  max-width: 768px;
   color: var(--color-in-red);
 }
-
-.section-title.another-color::after {
-  background-color: var(--color-white);
+.advantages__list {
+  margin: 0;
+  padding: 0 34px;
+  display: flex;
+  justify-content: space-between;
+  gap: 34px;
 }
-
-.vorteile h3 {
+.advantages__list-item {
+  max-width: 280px;
+  align-items: center;
+  text-align: center;
+}
+.advantages__card-title {
   margin-bottom: 12px;
   font-weight: 600;
   font-size: 20px;
@@ -468,30 +429,11 @@ header {
   text-align: center;
   color: var(--color-white);
 }
-
-.vorteile-text {
-  margin: 0 auto 64px;
-  max-width: 768px;
-}
-
-.vorteile h3 + p {
+.advantages__card-text {
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-}
-
-.vorteile-list {
-  margin: 0;
-  padding: 0 34px;
-  display: flex;
-  justify-content: space-between;
-  gap: 34px;
-}
-
-.vorteile-list li {
-  max-width: 280px;
-  align-items: center;
-  text-align: center;
+  color: var(--color-in-red);
 }
 
 .kontakt-text {

@@ -1,21 +1,21 @@
-header {
+.header {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1;
-}
 
-.heder-flex {
-  display: flex;
-  align-items: center;
-}
+  &__container {
+    display: flex;
+    align-items: center;
+  }
 
-.heder-flex nav {
-  flex: 1;
-}
+  &__nav {
+    flex: 1;
+  }
 
-.top-menu {
-  display: flex;
-  justify-content: space-between;
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+  }
 }

@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <div class="heder-flex">
+        <div class="header__container">
           <a href="/">
             <svg class="icon-logo">
               <use href="./images/icons.svg#icon-logo"></use></svg
           ></a>
-          <nav>
-            <ul class="top-menu">
+          <nav class="header__nav">
+            <ul class="header__menu">
               <li><a class="link" href="#uber_uns">Über uns</a></li>
               <li><a class="link" href="#leistungen">Unsere Leistungen</a></li>
               <li><a class="link" href="#vorteile">Ihre Vorteile</a></li>
@@ -27,33 +27,33 @@
       </div>
     </header>
     <main>
-      <section class="section hero-section">
-        <div class="container-hero">
-          <h1 class="hero-tittle">
+      <section class="section hero">
+        <div class="hero__container">
+          <h1 class="hero__tittle">
             Ihr zuverlässiger Partner für Haus, Garten & Renovierung
           </h1>
-          <h2 class="hero-text">
+          <h2 class="hero__text">
             Professionelle Hausmeisterdienste, Bodenverlegung und
             Fliesenarbeiten aus einer Hand. Schnell, sauber und fair.
           </h2>
-          <!--Кнопка заявки-->
           <button class="hero-button-red" type="button">
             Jetzt unverbindliches Angebot anfordern
           </button>
           <button class="hero-button-call" type="button">
             <svg class="hero-icon-phone">
-              <use href="./images/icons.svg#icon-phone"></use></svg
-            >Jetzt anrufen
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+            Jetzt anrufen
           </button>
         </div>
         <svg class="icon-mouse">
           <use href="./images/icons.svg#icon-imouse"></use>
         </svg>
       </section>
-      <section class="section-uber-uns section" id="uber_uns">
+      <section class="section about" id="uber_uns">
         <div class="container">
           <h2 class="section-title">Über uns</h2>
-          <p class="text-after-h2 text-uber-uns">
+          <p class="section-text about__text">
             Mit unserem professionellen Hausmeister- und Renovierungsservice
             bieten wir Ihnen umfassende Lösungen für Ihr Zuhause oder Ihre
             Immobilie. Wir legen großen Wert auf Qualität, Termintreue und einen
@@ -61,103 +61,103 @@
             Seite – von kleinen Reparaturen bis hin zu umfangreichen
             Renovierungsarbeiten.
           </p>
-          <ul class="uber-uns-list">
-            <li class="box-for-advantages">
+          <ul class="about__list">
+            <li class="about__box">
               <svg class="logo-size">
                 <use href="./images/icons.svg#icon-qualitet"></use>
               </svg>
-              <h3 class="uber-uns-advantages">Hohe Qualität</h3>
-              <p class="uber-uns-advantages-text">
+              <h3 class="about__box-title">Hohe Qualität</h3>
+              <p class="about__box-text">
                 Professionelle Ausführung aller Arbeiten nach deutschen
                 Standards
               </p>
             </li>
-            <li class="box-for-advantages">
+            <li class="about__box">
               <svg class="logo-size">
                 <use href="./images/icons.svg#icon-clock"></use>
               </svg>
-              <h3 class="uber-uns-advantages">Termintreue</h3>
-              <p class="uber-uns-advantages-text">
+              <h3 class="about__box-title">Termintreue</h3>
+              <p class="about__box-text">
                 Pünktliche und zuverlässige Fertigstellung Ihrer Projekte
               </p>
             </li>
-            <li class="box-for-advantages">
+            <li class="about__box">
               <svg class="logo-size">
                 <use href="./images/icons.svg#icon-check_mark"></use>
               </svg>
-              <h3 class="uber-uns-advantages">Sauberkeit</h3>
-              <p class="uber-uns-advantages-text">
+              <h3 class="about__box-title">Sauberkeit</h3>
+              <p class="about__box-text">
                 Akkurate Arbeit mit vollständiger Reinigung nach Abschluss
               </p>
             </li>
-            <li class="box-for-advantages">
+            <li class="about__box">
               <svg class="logo-size">
                 <use href="./images/icons.svg#icon-people"></use>
               </svg>
-              <h3 class="uber-uns-advantages">Erfahrung</h3>
-              <p class="uber-uns-advantages-text">
+              <h3 class="about__box-title">Erfahrung</h3>
+              <p class="about__box-text">
                 Langjährige Expertise in Hausmeister- und Renovierungsarbeiten
               </p>
             </li>
           </ul>
         </div>
       </section>
-      <section class="section unsere-leistungen" id="leistungen">
+      <section class="section services" id="leistungen">
         <div class="container">
           <h2 class="section-title">Unsere Leistungen</h2>
-          <p class="text-after-h2 text-unsere-leisungen">
+          <p class="section-text services__text">
             Von der Gartenpflege über professionelle Renovierungsarbeiten bis
             hin zur Möbelmontage - wir bieten Ihnen alle Dienstleistungen rund
             um Haus und Garten aus einer Hand.
           </p>
-          <div class="haus-garden-list-bg">
-            <h3 class="unsere-leistungen-h3">Hausmeister- & Gartenpflege</h3>
-            <p class="unsere-leistungen-after-h3">
+          <div class="services__lists-bg green">
+            <h3 class="services__title-list">Hausmeister- & Gartenpflege</h3>
+            <p class="services__subtitle-list">
               Professionelle Pflege für Ihr Grundstück und Gebäude
             </p>
-            <ul class="haus-garden-list">
+            <ul class="services__lists">
               <li>
                 <svg class="logo-size">
                   <use href="./images/icons.svg#icon-scissors"></use>
                 </svg>
-                <h4>Gartenpflege</h4>
-                <p>Rasenmähen, Heckenschnitt und Grünflächenpflege</p>
+                <h4 class="services__card-title">Gartenpflege</h4>
+                <p class="services__card-text">Rasenmähen, Heckenschnitt und Grünflächenpflege</p>
               </li>
               <li>
                 <svg class="logo-size">
                   <use href="./images/icons.svg#icon-snowflake"></use>
                 </svg>
-                <h4>Winterdienst</h4>
-                <p>Schneeräumung, Streuen und Gebäudereinigung</p>
+                <h4 class="services__card-title">Winterdienst</h4>
+                <p class="services__card-text">Schneeräumung, Streuen und Gebäudereinigung</p>
               </li>
               <li>
                 <svg class="logo-size">
                   <use href="./images/icons.svg#icon-garbage"></use>
                 </svg>
-                <h4>Mülltonnenservice</h4>
-                <p>Müllentsorgung und Objektüberwachung</p>
+                <h4 class="services__card-title">Mülltonnenservice</h4>
+                <p class="services__card-text">Müllentsorgung und Objektüberwachung</p>
               </li>
               <li>
                 <svg class="logo-size">
                   <use href="./images/icons.svg#icon-lamp"></use>
                 </svg>
-                <h4>Kleine Instandsetzungen</h4>
-                <p>Lampenwechsel, Schlossaustausch und Kleinreparaturen</p>
+                <h4 class="services__card-title">Kleine Instandsetzungen</h4>
+                <p class="services__card-text">Lampenwechsel, Schlossaustausch und Kleinreparaturen</p>
               </li>
             </ul>
           </div>
-          <div class="renovirung-list-bg">
-            <h3 class="unsere-leistungen-h3">Renovierungsarbeiten</h3>
-            <p class="unsere-leistungen-after-h3">
+          <div class="services__lists-bg orange">
+            <h3 class="services__title-list">Renovierungsarbeiten</h3>
+            <p class="services__subtitle-list">
               Fachgerechte Renovierung nach HWK-Standard B1/B2
             </p>
-            <ul class="renovirung-list">
+            <ul class="services__lists">
               <li>
                 <svg class="logo-size">
                   <use href="./images/icons.svg#icon-tacks"></use>
                 </svg>
-                <h4>Bodenverlegung</h4>
-                <p>
+                <h4 class="services__card-title">Bodenverlegung</h4>
+                <p class="services__card-text">
                   Laminat, Vinyl, PVC und Fertigparkett professionell verlegt
                 </p>
               </li>
@@ -165,101 +165,101 @@
                 <svg class="logo-size">
                   <use href="./images/icons.svg#icon-star"></use>
                 </svg>
-                <h4>Fliesenarbeiten</h4>
-                <p>Keramikfliesen, Mosaik und Platten für Innenräume</p>
+                <h4 class="services__card-title">Fliesenarbeiten</h4>
+                <p class="services__card-text">Keramikfliesen, Mosaik und Platten für Innenräume</p>
               </li>
               <li>
                 <svg class="logo-size">
                   <use href="./images/icons.svg#icon-paint"></use>
                 </svg>
-                <h4>Maler & Tapezierarbeiten</h4>
-                <p>Wandanstrich und Tapetenverlegung für neue Optik</p>
+                <h4 class="services__card-title">Maler & Tapezierarbeiten</h4>
+                <p class="services__card-text">Wandanstrich und Tapetenverlegung für neue Optik</p>
               </li>
               <li>
                 <svg class="logo-size">
                   <use href="./images/icons.svg#icon-wrench"></use>
                 </svg>
-                <h4>Trockenbau</h4>
-                <p>Gipskartonmontage und Trennwände nach Maß</p>
+                <h4 class="services__card-title">Trockenbau</h4>
+                <p class="services__card-text">Gipskartonmontage und Trennwände nach Maß</p>
               </li>
             </ul>
           </div>
-          <div class="montage-list-bg">
-            <h3 class="unsere-leistungen-h3">Montage- & Aufbauservice</h3>
-            <p class="unsere-leistungen-after-h3">
+          <div class="services__lists-bg blue">
+            <h3 class="services__title-list">Montage- & Aufbauservice</h3>
+            <p class="services__subtitle-list">
               Fachgerechte Installation und Montage
             </p>
-            <ul class="montage-list">
+            <ul class="services__lists">
               <li>
                 <svg class="logo-size">
                   <use href="./images/icons.svg#icon-box"></use>
                 </svg>
-                <h4>Möbelmontage</h4>
-                <p>Aufbau von IKEA-Küchen, Schränken und Möbeln aller Art</p>
+                <h4 class="services__card-title">Möbelmontage</h4>
+                <p class="services__card-text">Aufbau von IKEA-Küchen, Schränken und Möbeln aller Art</p>
               </li>
               <li>
                 <svg class="logo-size">
                   <use href="./images/icons.svg#icon-door"></use>
                 </svg>
-                <h4>Einbau von Baufertigteilen</h4>
-                <p>Installation von genormten Fenstern, Türen und Zargen</p>
+                <h4 class="services__card-title">Einbau von Baufertigteilen</h4>
+                <p class="services__card-text">Installation von genormten Fenstern, Türen und Zargen</p>
               </li>
               <li>
                 <svg class="logo-size">
                   <use href="./images/icons.svg#icon-hamer"></use>
                 </svg>
-                <h4>Montagearbeiten</h4>
-                <p>Gardinenstangen, Lampen, Spiegel und TV-Halterungen</p>
+                <h4 class="services__card-title">Montagearbeiten</h4>
+                <p class="services__card-text">Gardinenstangen, Lampen, Spiegel und TV-Halterungen</p>
               </li>
               <li></li>
             </ul>
           </div>
         </div>
       </section>
-      <section class="section vorteile" id="vorteile">
+      <section class="section advantages" id="vorteile">
         <div class="container">
-          <h2 class="section-title another-color">Ihre Vorteile</h2>
-          <p class="text-after-h2 vorteile-text">
+          <h2 class="section-title advantages__title light">Ihre Vorteile</h2>
+          <p class="section-text advantages__text">
             Vertrauen Sie auf einen professionellen Partner, der Qualität,
             Transparenz und Kundenzufriedenheit in den Mittelpunkt stellt.
           </p>
-          <ul class="vorteile-list">
-            <li>
+          <ul class="advantages__list">
+            <li class="advantages__list-item">
               <svg class="logo-size">
                 <use href="./images/icons.svg#icon-euro"></use>
               </svg>
-              <h3>Transparente Preise</h3>
-              <p>
+              <h3 class="advantages__card-title">Transparente Preise</h3>
+              <p class="advantages__card-text">
                 Faire Kostenvoranschläge ohne versteckte Gebühren. Sie wissen
                 genau, was Sie zahlen.
               </p>
             </li>
-            <li>
+            <li class="advantages__list-item">
               <svg class="logo-size">
                 <use href="./images/icons.svg#icon-blat"></use>
               </svg>
-              <h3>Steuerlich absetzbar</h3>
-              <p>
+              <h3 class="advantages__card-title">Steuerlich absetzbar</h3>
+              <p class="advantages__card-text">
                 Arbeit nach Vertrag mit offiziellen Rechnungen – absetzbar von
                 der Steuer gemäß §35a EStG.
               </p>
             </li>
-            <li>
+            <li class="advantages__list-item">
               <svg class="logo-size">
                 <use href="./images/icons.svg#icon-geomark"></use>
               </svg>
-              <h3>Kostenlose Erstberatung</h3>
-              <p>
+              <h3 class="advantages__card-title">Kostenlose Erstberatung</h3>
+              <p class="advantages__card-text">
                 Unverbindlicher Vor-Ort-Termin zur Begutachtung und Beratung –
                 komplett kostenfrei.
               </p>
             </li>
-            <li>
+            <li class="advantages__list-item">
               <svg class="logo-size">
                 <use href="./images/icons.svg#icon-shield"></use>
               </svg>
-              <h3>Versichert & Zertifiziert</h3>
-              <p>
+              <h3 class="advantages__card-title">Versichert & Zertifiziert</h3>
+              <p class="advantages__card-text">
                 Vollständig versichert und nach deutschen Handwerksstandards
                 qualifiziert.
               </p>
@@ -270,7 +270,7 @@
       <!-- <section class="section" id="referenzen">
         <div class="container">
           <h2 class="section-title">Unsere Referenzen</h2>
-          <p class="text-after-h2">
+          <p class="section-text">
             Überzeugen Sie sich von der Qualität unserer Arbeit. Hier sehen Sie
             eine Auswahl erfolgreich abgeschlossener Projekte.
           </p>
@@ -279,7 +279,7 @@
       <section class="section kontakt" id="kontakt">
         <div class="container">
           <h2 class="section-title">Kontakt aufnehmen</h2>
-          <p class="text-after-h2 kontakt-text">
+          <p class="section-text kontakt-text">
             Haben Sie Fragen oder möchten Sie ein unverbindliches Angebot?
             Kontaktieren Sie uns – wir freuen uns auf Ihre Nachricht!
           </p>

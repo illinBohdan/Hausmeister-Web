@@ -1,0 +1,44 @@
+.advantages {
+  background: linear-gradient(135deg, #f54900 0%, #ca3500 100%);
+
+  &__title {
+    color: var(--color-white);
+  }
+
+  &__text {
+    margin: 0 auto 64px;
+    max-width: 768px;
+    color: var(--color-in-red);
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0 34px;
+    display: flex;
+    justify-content: space-between;
+    gap: 34px;
+  }
+
+  &__list-item {
+    max-width: 280px;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__card-title {
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+    color: var(--color-white);
+  }
+
+  &__card-text {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--color-in-red);
+  }
+}
+

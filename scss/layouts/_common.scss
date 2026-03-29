@@ -1,19 +1,23 @@
-.text-after-h2 {
-  font-size: 18px;
-  text-align: center;
-}
-
 .section-title {
   margin-bottom: 24px;
+
+  &::after {
+    margin-top: 16px;
+    position: relative;
+    left: calc(100% / 2 - 48px);
+    display: block;
+    content: "";
+    width: 96px;
+    height: 4px;
+    background-color: var(--primary-red-dark);
+  }
+
+  &.light::after {
+    background-color: var(--color-white);
+  }
 }
 
-.section-title::after {
-  margin-top: 16px;
-  position: relative;
-  left: calc(100% / 2 - 48px);
-  display: block;
-  content: "";
-  width: 96px;
-  height: 4px;
-  background-color: var(--primary-red-dark);
+.section-text {
+  font-size: 18px;
+  text-align: center;
 }
