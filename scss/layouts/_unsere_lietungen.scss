@@ -1,0 +1,103 @@
+
+.unsere-leistungen-h3 {
+  padding: 34px 34px 0;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  color: var(--color-h);
+}
+
+.text-unsere-leisungen {
+  margin-bottom: 37px;
+}
+
+.unsere-leistungen-after-h3 {
+  padding: 0 34px;
+  margin-bottom: 32px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.unsere-leistungen h4 {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color-h);
+  text-align: center;
+}
+
+.unsere-leistungen h4 + p {
+  padding: 0 24px 24px;
+  margin: 0;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.haus-garden-list-bg {
+  margin-bottom: 48px;
+  background-color: var(--color-green-for-list);
+  border: 2px solid var(--bordercolor-for-green-list);
+  border-radius: 16px;
+}
+
+.haus-garden-list {
+  margin: 0;
+  padding: 0 34px 34px;
+  display: flex;
+  gap: 24px;
+}
+
+.haus-garden-list li {
+  border-radius: 10px;
+  max-width: 269px;
+  box-shadow:
+    0 1px 2px -1px rgba(0, 0, 0, 0.1),
+    0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  background: var(--color-white);
+}
+
+.renovirung-list-bg {
+  margin-bottom: 48px;
+  background-color: var(--color-orange-for-list);
+  border: 2px solid var(--bordercolor-for-orange-list);
+  border-radius: 16px;
+}
+
+.renovirung-list {
+  margin: 0;
+  padding: 0 34px 34px;
+  display: flex;
+  gap: 24px;
+}
+
+.renovirung-list li {
+  border-radius: 10px;
+  max-width: 269px;
+  box-shadow:
+    0 1px 2px -1px rgba(0, 0, 0, 0.1),
+    0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  background: var(--color-white);
+}
+
+.montage-list-bg {
+  border: 2px solid var(--bordercolor-for-blue-list);
+  border-radius: 16px;
+  background: var(--color-blue-for-list);
+}
+
+.montage-list {
+  margin: 0;
+  padding: 0 34px 34px;
+  display: flex;
+  gap: 24px;
+}
+
+.montage-list li {
+  border-radius: 10px;
+  max-width: 269px;
+  box-shadow:
+    0 1px 2px -1px rgba(0, 0, 0, 0.1),
+    0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  background: #fff;
+}

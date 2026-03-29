@@ -1,0 +1,76 @@
+
+.icon-logo {
+  width: 180px;
+  height: 32px;
+}
+
+.hero-icon-phone {
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-mouse {
+  position: absolute;
+  left: 50%;
+  bottom: 42px;
+  width: 40px;
+  height: 50px;
+
+  animation: jumping 1s ease-in-out infinite;
+}
+
+@keyframes jumping {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-7px);
+  }
+  20% {
+    transform: translateY(-8px);
+  }
+  30% {
+    transform: translateY(-9px);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-8px);
+  }
+  70% {
+    transform: translateY(-7px);
+  }
+
+  80% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.logo-size {
+  width: 56px;
+  height: 56px;
+  margin: 24px 0 16px 24px;
+}
+
+.kontakt-icons {
+  margin-right: 16px;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+.footer-icons-address {
+  width: 16px;
+  height: 16px;
+}
+
+.footer-icons-social {
+  margin-right: 12px;
+  width: 40px;
+  height: 40px;
+}
