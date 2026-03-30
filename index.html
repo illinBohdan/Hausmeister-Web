@@ -276,51 +276,51 @@
           </p>
         </div>
       </section> -->
-      <section class="section kontakt" id="kontakt">
+      <section class="section contact" id="kontakt">
         <div class="container">
           <h2 class="section-title">Kontakt aufnehmen</h2>
-          <p class="section-text kontakt-text">
+          <p class="section-text contact__text">
             Haben Sie Fragen oder möchten Sie ein unverbindliches Angebot?
             Kontaktieren Sie uns – wir freuen uns auf Ihre Nachricht!
           </p>
-          <div class="kontact-flex">
-            <div class="kontakt-info-and-form">
-              <h3>Kontaktinformationen</h3>
+          <div class="contact__container">
+            <div class="contact__info">
+              <h3 class="contact__title-info-and-form">Kontaktinformationen</h3>
               <ul>
-                <li>
+                <li class="contact__item">
                   <svg class="kontakt-icons">
                     <use href="./images/icons.svg#icon-telefon"></use>
                   </svg>
                   <div>
-                    <h4>Telefon</h4>
-                    <p>+49 123 456 7890</p>
+                    <h4 class="contact__title-item">Telefon</h4>
+                    <p class="contact__text-item">+49 123 456 7890</p>
                   </div>
                 </li>
-                <li>
+                <li class="contact__item">
                   <svg class="kontakt-icons">
                     <use href="./images/icons.svg#icon-email"></use>
                   </svg>
                   <div>
-                    <h4>E-Mail</h4>
-                    <p>info@hausmeister-service.de</p>
+                    <h4 class="contact__title-item">E-Mail</h4>
+                    <p class="contact__text-item">info@hausmeister-service.de</p>
                   </div>
                 </li>
-                <li>
+                <li class="contact__item">
                   <svg class="kontakt-icons">
                     <use href="./images/icons.svg#icon-adresse"></use>
                   </svg>
                   <div>
-                    <h4>Adresse</h4>
-                    <p>Musterstraße 123 12345 Berlin, Deutschland</p>
+                    <h4 class="contact__title-item">Adresse</h4>
+                    <p class="contact__text-item">Musterstraße 123 12345 Berlin, Deutschland</p>
                   </div>
                 </li>
-                <li>
+                <li class="contact__item">
                   <svg class="kontakt-icons">
                     <use href="./images/icons.svg#icon-clock"></use>
                   </svg>
                   <div>
-                    <h4>Öffnungszeiten</h4>
-                    <p>
+                    <h4 class="contact__title-item">Öffnungszeiten</h4>
+                    <p class="contact__text-item">
                       Mo - Fr: 08:00 - 18:00 Uhr Sa: 09:00 - 14:00 Uhr So: Nach
                       Vereinbarung
                     </p>
@@ -328,38 +328,38 @@
                 </li>
               </ul>
             </div>
-            <div class="kontakt-info-and-form anfrage">
-              <h3>Anfrage senden</h3>
+            <div class="contact__form-container">
+              <h3 class="contact__title-info-and-form">Anfrage senden</h3>
               <form name="contact-form" class="contact-form">
-                <label class="form-label" for="user-name"> Name * </label>
+                <label class="contact-form__label" for="user-name"> Name * </label>
                 <input
-                  class="form-input"
+                  class="contact-form__input"
                   placeholder="Ihre Name"
                   type="text"
                   name="user-name"
                   id="user-name"
                 />
-                <label class="form-label" for="user-email">E-Mail</label>
+                <label class="contact-form__label" for="user-email">E-Mail</label>
                 <input
-                  class="form-input"
+                  class="contact-form__input"
                   placeholder="Ihre Email"
                   type="email"
                   name="user-email"
                   id="user-email"
                 />
-                <label class="form-label" for="user-phone">Telefon * </label>
+                <label class="contact-form__label" for="user-phone">Telefon * </label>
                 <input
-                  class="form-input"
+                  class="contact-form__input"
                   placeholder="Ihre Handy"
                   type="tel"
                   name="user-phone"
                   id="user-phone"
                 />
-                <label class="form-label" for="beschreibung"
+                <label class="contact-form__label" for="beschreibung"
                   >Beschreibung der Arbeit *</label
                 >
                 <input
-                  class="form-input beschreibung"
+                  class="contact-form__input beschreibung"
                   type="text"
                   name="beschreibung"
                   id="beschreibung"
@@ -367,7 +367,7 @@
                 <button class="button-under-form" type="submit">
                   Anfrage absenden
                 </button>
-                <p class="text-under-form">
+                <p class="contact__text-under-form">
                   * Pflichtfelder. Ihre Daten werden vertraulich behandelt.
                 </p>
               </form>

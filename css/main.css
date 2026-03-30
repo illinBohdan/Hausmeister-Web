@@ -150,6 +150,29 @@ ul {
   background: var(--primary-red-dark);
 }
 
+.contact-form__label {
+  font-weight: 500;
+  line-height: 1.4;
+  display: block;
+  margin-bottom: 8px;
+}
+.contact-form__input {
+  padding: 16px;
+  margin-bottom: 24px;
+  min-width: 100%;
+  min-height: 50px;
+  border: 1px solid var(--color-link);
+  border-radius: 10px;
+}
+.contact-form__input:focus {
+  border: 2px solid var(--primary-red-dark);
+  outline: none;
+}
+.contact-form__input.beschreibung {
+  min-height: 146px;
+  margin-bottom: 30px;
+}
+
 .icon-logo {
   width: 180px;
   height: 32px;
@@ -206,7 +229,6 @@ ul {
 }
 
 .kontakt-icons {
-  margin-right: 16px;
   width: 48px;
   height: 48px;
   flex-shrink: 0;
@@ -436,82 +458,47 @@ a:hover {
   color: var(--color-in-red);
 }
 
-.kontakt-text {
+.contact__text {
   max-width: 735px;
   margin: 0 auto 65px;
 }
-
-.kontakt h3 {
+.contact__container {
+  display: flex;
+  gap: 48px;
+}
+.contact__info {
+  flex: 1;
+}
+.contact__form-container {
+  flex: 1;
+  background: var(--color-lite-grey);
+  padding: 32px;
+  border-radius: 16px;
+}
+.contact__title-info-and-form {
   font-weight: 600;
   font-size: 24px;
   line-height: 1.3;
   color: var(--color-h);
 }
-
-.kontakt h4 {
+.contact__title-item {
   margin-bottom: 4px;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
   color: var(--color-h);
 }
-
-.kontakt h4 + p {
+.contact__text-item {
   margin-bottom: 24px;
   font-size: 16px;
   line-height: 1.5;
   max-width: 224px;
 }
-
-.kontakt label {
-  font-weight: 500;
-  line-height: 1.4;
-}
-
-.kontact-flex {
+.contact__item {
   display: flex;
-  gap: 48px;
+  gap: 16px;
 }
-
-.kontakt-info-and-form {
-  flex: 1;
-}
-
-.kontakt-info-and-form.anfrage {
-  background: var(--color-lite-grey);
-  padding: 32px;
-  border-radius: 16px;
-}
-
-.kontact-flex li {
-  display: flex;
-}
-
-.form-label {
-  display: block;
-  margin-bottom: 8px;
-}
-
-.form-input {
-  padding: 16px;
-  margin-bottom: 24px;
-  min-width: 520px;
-  min-height: 50px;
-  border: 1px solid var(--color-link);
-  border-radius: 10px;
-}
-
-.form-input:focus {
-  border: 2px solid var(--primary-red-dark);
-  outline: none;
-}
-
-.form-input.beschreibung {
-  min-height: 146px;
-  margin-bottom: 30px;
-}
-
-.text-under-form {
+.contact__text-under-form {
   margin-bottom: 0;
   line-height: 1.4;
   text-align: center;
