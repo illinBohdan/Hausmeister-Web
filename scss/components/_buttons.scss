@@ -1,54 +1,58 @@
-.hero-button-red {
-  margin-right: 16px;
-  padding: 16px 20px 18px;
-  border-radius: 10px;
-  width: 397px;
-  height: 62px;
-  border: none;
-  background: var(--primary-red-light);
+.hero {
+  &__button-red {
+    margin-right: 16px;
+    padding: 16px 20px 18px;
+    border-radius: 10px;
+    width: 397px;
+    height: 62px;
+    border: none;
+    background: var(--primary-red-light);
 
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: center;
-  color: var(--color-white);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--color-white);
+
+    &:hover {
+      background: var(--primary-red-dark);
+    }
+  }
+
+  &__button-call {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    color: var(--color-white);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 1px;
+    width: 200px;
+    height: 62px;
+    background: rgba(255, 255, 255, 0.1);
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+  }
 }
 
-.hero-button-red:hover {
-  background: var(--primary-red-dark);
-}
+.contact-form {
+  &__button-under-form {
+    margin-bottom: 24px;
+    border-radius: 10px;
+    width: 520px;
+    height: 56px;
+    border: none;
+    background: var(--primary-red-light);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--color-white);
 
-.hero-button-call {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 156%;
-  color: var(--color-white);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 10px;
-  padding: 1px;
-  width: 200px;
-  height: 62px;
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.hero-button-call:hover {
-  background: rgba(255, 255, 255, 0.3);
-}
-
-.button-under-form {
-  margin-bottom: 24px;
-  border-radius: 10px;
-  width: 520px;
-  height: 56px;
-  border: none;
-  background: var(--primary-red-light);
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: var(--color-white);
-}
-
-.button-under-form:hover {
-  background: var(--primary-red-dark);
+    &:hover {
+      background: var(--primary-red-dark);
+    }
+  }
 }
