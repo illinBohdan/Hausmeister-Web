@@ -1,3 +1,5 @@
+@use "../abstracts/mixins" as *;
+
 .header {
   position: absolute;
   top: 0;
@@ -10,12 +12,30 @@
     align-items: center;
   }
 
+  &__burger {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-left: auto;    
+    cursor: pointer;
+
+    @include min-tablet {
+      display: none;
+    }
+  }
+
   &__nav {
-    flex: 1;
+    display: none;
+
+    @include min-tablet {
+      display: block;
+      flex: 1;
+    }
   }
 
   &__menu {
     display: flex;
     justify-content: space-between;
+    gap: 12px;
   }
 }

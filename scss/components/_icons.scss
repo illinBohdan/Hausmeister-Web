@@ -9,6 +9,14 @@
   margin: 24px 0 16px 24px;
 }
 
+.header {
+  &__icon-burger{
+    width: 24px;
+    height: 24px;
+    
+  }
+}
+
 .hero {
   &__icon-phone {
     margin-right: 8px;
