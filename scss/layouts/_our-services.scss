@@ -1,5 +1,5 @@
+@use "../abstracts/mixins" as *;
 .services {
-  
   &__text {
     margin-bottom: 37px;
   }
@@ -40,14 +40,26 @@
     padding: 0 34px 34px;
     display: flex;
     gap: 24px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @include min-tablet {
+      flex-direction: row;
+      justify-content: center;
+    }
 
     & li {
       border-radius: 10px;
-      max-width: 269px;
+      max-width: 320px;
       box-shadow:
         0 1px 2px -1px rgba(0, 0, 0, 0.1),
         0 1px 3px 0 rgba(0, 0, 0, 0.1);
       background: var(--color-white);
+
+      @include min-tablet {
+        max-width: 269px;
+      }
     }
   }
 

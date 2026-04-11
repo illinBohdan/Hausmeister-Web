@@ -206,6 +206,18 @@ ul {
   }
 }
 
+.services__logo-size {
+  width: 40px;
+  height: 40px;
+  margin: 24px 0 16px 24px;
+}
+@media screen and (min-width: 768px) {
+  .services__logo-size {
+    width: 48px;
+    height: 48px;
+  }
+}
+
 .header__icon-burger {
   width: 24px;
   height: 24px;
@@ -503,12 +515,26 @@ a:hover {
   padding: 0 34px 34px;
   display: flex;
   gap: 24px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .services__lists {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 .services__lists li {
   border-radius: 10px;
-  max-width: 269px;
+  max-width: 320px;
   box-shadow: 0 1px 2px -1px rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.1);
   background: var(--color-white);
+}
+@media screen and (min-width: 768px) {
+  .services__lists li {
+    max-width: 269px;
+  }
 }
 .services__lists-bg {
   margin-bottom: 48px;
