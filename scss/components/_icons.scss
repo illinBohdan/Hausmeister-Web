@@ -97,12 +97,23 @@
 
 .footer {
   &__icons-address {
-    width: 16px;
-    height: 16px;
+    width: 12px;
+    height: 12px;
+
+    @include min-tablet {
+      width: 16px;
+      height: 16px;
+    }
   }
+
   &__icons-social {
     margin-right: 12px;
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
+
+    @include min-tablet {
+      width: 40px;
+      height: 40px;
+    }
   }
 }
