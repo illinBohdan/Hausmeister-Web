@@ -43,6 +43,7 @@ h2 {
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 /* inter-regular - latin */
@@ -229,7 +230,7 @@ ul {
 }
 .hero__icon-mouse {
   position: absolute;
-  left: 50%;
+  left: calc(50% - 20px);
   bottom: 42px;
   width: 40px;
   height: 50px;
@@ -512,9 +513,6 @@ a:hover {
     line-height: 1.5;
   }
 }
-.footer__list {
-  padding: 0;
-}
 .footer__nav-list {
   margin-bottom: 8px;
   font-size: 12px;
@@ -743,7 +741,7 @@ a:hover {
   transform: scale(0.9);
 }
 .mobile-menu__menu {
-  margin-top: 40px;
+  margin: 40px;
 }
 .mobile-menu li {
   margin-bottom: 20px;
