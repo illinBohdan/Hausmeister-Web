@@ -16,7 +16,7 @@
     margin: 0;
     padding: 0 34px;
     display: flex;
-    
+
     gap: 34px;
     flex-direction: column;
     align-items: center;
@@ -24,7 +24,7 @@
 
     @include min-tablet {
       flex-direction: row;
-      
+      justify-content: center;
     }
   }
 
@@ -37,16 +37,26 @@
   &__card-title {
     margin-bottom: 12px;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 1.4;
+    font-size: 18px;
+    line-height: 1.56;
     text-align: center;
     color: var(--color-white);
+
+    @include min-tablet {
+      font-size: 20px;
+      line-height: 1.4;
+    }
   }
 
   &__card-text {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 14px;
+    line-height: 1.4;
     text-align: center;
     color: var(--color-in-red);
+
+       @include min-tablet {
+      font-size: 16px;
+      line-height: 1.5;
+    }
   }
 }

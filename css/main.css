@@ -152,7 +152,7 @@ ul {
 .contact-form__button-under-form {
   margin-bottom: 24px;
   border-radius: 10px;
-  width: 520px;
+  width: 100%;
   height: 56px;
   border: none;
   background: var(--primary-red-light);
@@ -267,9 +267,15 @@ ul {
 }
 
 .kontakt-icons {
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   flex-shrink: 0;
+}
+@media screen and (min-width: 768px) {
+  .kontakt-icons {
+    width: 48px;
+    height: 48px;
+  }
 }
 
 .footer__icons-address {
@@ -577,6 +583,7 @@ a:hover {
 @media screen and (min-width: 768px) {
   .advantages__list {
     flex-direction: row;
+    justify-content: center;
   }
 }
 .advantages__list-item {
@@ -587,16 +594,28 @@ a:hover {
 .advantages__card-title {
   margin-bottom: 12px;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 1.4;
+  font-size: 18px;
+  line-height: 1.56;
   text-align: center;
   color: var(--color-white);
 }
+@media screen and (min-width: 768px) {
+  .advantages__card-title {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
 .advantages__card-text {
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.4;
   text-align: center;
   color: var(--color-in-red);
+}
+@media screen and (min-width: 768px) {
+  .advantages__card-text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
 
 .contact__text {
@@ -606,6 +625,13 @@ a:hover {
 .contact__container {
   display: flex;
   gap: 48px;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .contact__container {
+    flex-direction: row;
+  }
 }
 .contact__info {
   flex: 1;
@@ -618,22 +644,40 @@ a:hover {
 }
 .contact__title-info-and-form {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 1.3;
+  font-size: 20px;
+  line-height: 1.4;
   color: var(--color-dark);
+}
+@media screen and (min-width: 768px) {
+  .contact__title-info-and-form {
+    font-size: 24px;
+    line-height: 1.3;
+  }
 }
 .contact__title-item {
   margin-bottom: 4px;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.4;
   color: var(--color-dark);
+}
+@media screen and (min-width: 768px) {
+  .contact__title-item {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
 .contact__text-item {
   margin-bottom: 24px;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.4;
   max-width: 224px;
+}
+@media screen and (min-width: 768px) {
+  .contact__text-item {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
 .contact__item {
   display: flex;
@@ -641,9 +685,16 @@ a:hover {
 }
 .contact__text-under-form {
   margin-bottom: 0;
-  line-height: 1.4;
+  font-size: 12px;
+  line-height: 1.3;
   text-align: center;
   color: var(--color-under-form);
+}
+@media screen and (min-width: 768px) {
+  .contact__text-under-form {
+    font-size: 14px;
+    line-height: 1.4;
+  }
 }
 
 .footer {

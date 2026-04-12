@@ -1,3 +1,4 @@
+@use "../abstracts/mixins" as *;
 .contact-form {
   &__label {
     font-weight: 500;
