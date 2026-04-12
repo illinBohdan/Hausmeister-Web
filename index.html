@@ -2,7 +2,7 @@
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hausmeister</title>
     <link rel="stylesheet" href="./css/main.css" />
   </head>
@@ -23,11 +23,50 @@
               <li><a class="link" href="#kontakt">Kontakt aufnehmen</a></li>
             </ul>
           </nav>
-          <button class="header__burger">
+          <button class="header__burger menu-btn-open">
             <svg class="header__icon-burger">
               <use href="./images/icons.svg#icon-burger"></use>
             </svg>
           </button>
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close menu-btn-close" type="button" aria-label="close">
+              <svg class="mobile-menu__icone-close">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <nav>
+              <a class="mobile-menu__logo" href="/">
+                <svg class="icon-logo">
+                  <use href="./images/icons.svg#icon-logo"></use>
+                </svg>
+              </a>
+              <ul class="mobile-menu__menu">
+                <li>
+                  <a class="mobile-menu__link" href="#uber_uns"> Über uns </a>
+                </li>
+                <li>
+                  <a class="mobile-menu__link" href="#leistungen"
+                    >Unsere Leistungen</a
+                  >
+                </li>
+                <li>
+                  <a class="mobile-menu__link" href="#vorteile"
+                    >Ihre Vorteile</a
+                  >
+                </li>
+                <li>
+                  <a class="mobile-menu__link" href="#referenzen"
+                    >Unsere Referenzen</a
+                  >
+                </li>
+                <li>
+                  <a class="mobile-menu__link" href="#kontakt"
+                    >Kontakt aufnehmen</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </header>
@@ -43,14 +82,14 @@
           </h2>
           <div class="hero__buttons">
             <button class="hero__button-red" type="button">
-            Jetzt unverbindliches Angebot anfordern
-          </button>
-          <button class="hero__button-call" type="button">
-            <svg class="hero__icon-phone">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
-            Jetzt anrufen
-          </button>
+              Jetzt unverbindliches Angebot anfordern
+            </button>
+            <button class="hero__button-call" type="button">
+              <svg class="hero__icon-phone">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              Jetzt anrufen
+            </button>
           </div>
         </div>
         <svg class="hero__icon-mouse">
@@ -500,5 +539,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

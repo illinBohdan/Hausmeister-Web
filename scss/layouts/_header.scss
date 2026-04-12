@@ -10,6 +10,7 @@
   &__container {
     display: flex;
     align-items: center;
+    min-height: 50px;
   }
 
   &__burger {
@@ -18,6 +19,10 @@
     padding: 0;
     margin-left: auto;    
     cursor: pointer;
+
+    &:active {    
+    transform: scale(0.9);           
+  }
 
     @include min-tablet {
       display: none;

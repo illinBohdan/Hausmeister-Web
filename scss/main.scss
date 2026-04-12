@@ -1,19 +1,20 @@
-@use './base/bases';
-@use './base/fonts';
+@use "./base/bases";
+@use "./base/fonts";
 
-@use './abstracts/variables';
-@use './abstracts/mixins';
+@use "./abstracts/mixins";
+@use "./abstracts/variables";
 
-@use './components/buttons';
-@use './components/forms';
-@use './components/icons';
-@use './components/links';
+@use "./components/buttons";
+@use "./components/forms";
+@use "./components/icons";
+@use "./components/links";
 
-@use './layouts/common';
-@use './layouts/header';
-@use './layouts/hero';
-@use './layouts/about-us';
-@use './layouts/our-services';
-@use './layouts/advantages';
-@use './layouts/kontakt';
-@use './layouts/footer';
+@use "./layouts/about-us";
+@use "./layouts/advantages";
+@use "./layouts/common";
+@use "./layouts/footer";
+@use "./layouts/header";
+@use "./layouts/hero";
+@use "./layouts/kontakt";
+@use "./layouts/mobile-menu";
+@use "./layouts/our-services";

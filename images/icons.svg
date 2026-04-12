@@ -1,5 +1,9 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="icon-close" viewBox="0 0 32 32">
+<path stroke="#d1d5dc" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.5994" d="M20.788 11.191l-9.597 9.597"></path>
+<path stroke="#d1d5dc" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.5994" d="M11.191 11.191l9.597 9.597"></path>
+</symbol>
 <symbol id="icon-burger" viewBox="0 0 32 32">
 <path stroke="#d1d5dc" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6656" d="M5.331 15.993h21.325"></path>
 <path stroke="#d1d5dc" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6656" d="M5.331 7.997h21.325"></path>
