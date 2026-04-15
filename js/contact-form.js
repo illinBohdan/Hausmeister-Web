@@ -15,7 +15,7 @@ contactForm.addEventListener("submit", async (e) => {
 
   try {
     const response = await fetch(
-      "http://hausmeister-backend-production-c177.up.railway.app/api/users/register",
+      "https://hausmeister-backend-production-c177.up.railway.app/api/users/register",
       {
         method: "POST",
         headers: {
