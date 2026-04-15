@@ -11,14 +11,19 @@ contactForm.addEventListener("submit", async (e) => {
     description: document.getElementById("beschreibung").value,
   };
 
+  //http://localhost:8080/api/users/register - для локального використання
+
   try {
-    const response = await fetch("http://localhost:8080/api/users/register", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
+    const response = await fetch(
+      "http://hausmeister-backend-production-c177.up.railway.app/api/users/register",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
       },
-      body: JSON.stringify(formData),
-    });
+    );
 
     if (response.ok) {
       alert("Дякуємо! Ваша заявка успішно надіслана.");
