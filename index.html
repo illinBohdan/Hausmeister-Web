@@ -410,6 +410,8 @@
                   type="text"
                   name="user-name"
                   id="user-name"
+                  required
+                  minlength="2"
                 />
                 <label class="contact-form__label" for="user-email"
                   >E-Mail</label
@@ -430,6 +432,8 @@
                   type="tel"
                   name="user-phone"
                   id="user-phone"
+                  required
+                  pattern="[+0-9\s-]+"
                 />
                 <label class="contact-form__label" for="beschreibung"
                   >Beschreibung der Arbeit *</label
