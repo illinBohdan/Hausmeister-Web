@@ -29,46 +29,31 @@ contactForm.addEventListener("submit", async (e) => {
       alert("Дякуємо! Ваша заявка успішно надіслана.");
       contactForm.reset(); // Очищуємо форму
     } else {
-    // Отримуємо JSON з помилками від Spring Boot
+      // Отримуємо JSON з помилками від Spring Boot
       const errorData = await response.json();
-      
 
+      if (errorData.errors) {
+        errorData.errors.forEach((err) => {
+          // Знаходимо інпут за id. в HTML id: user-name, user-email тощо
+          // В Java назви полів: name, email, phone, description
+          let fieldId = err.field;
+          if (fieldId === "name") fieldId = "user-name";
+          if (fieldId === "email") fieldId = "user-email";
+          if (fieldId === "phone") fieldId = "user-phone";
+          if (fieldId === "description") fieldId = "beschreibung";
 
-    //   // Якщо є масив помилок валідації (стандарт для Spring @Valid)
-    //   if (errorData.errors && errorData.errors.length > 0) {
-    //     const errorMessages = errorData.errors
-    //       .map(err => err.defaultMessage)
-    //       .join("\n");
-    //     alert("Помилка валідації:\n" + errorMessages);
-    // }
-    // else {
-    //     alert("Помилка: " + (errorData.message || "Спробуйте пізніше."));
-    //   }
+          const input = document.getElementById(fieldId);
+          if (input) {
+            // Встановлюємо власний текст помилки
+            input.setCustomValidity(err.defaultMessage);
+            // Змушуємо браузер показати це вікно негайно
+            input.reportValidity();
 
-
-if (errorData.errors) {
-    errorData.errors.forEach(err => {
-      // Знаходимо інпут за id. У вас в HTML id: user-name, user-email тощо
-      // В Java назви полів: name, email, phone, description
-      let fieldId = err.field;
-      if (fieldId === 'name') fieldId = 'user-name';
-      if (fieldId === 'email') fieldId = 'user-email';
-      if (fieldId === 'phone') fieldId = 'user-phone';
-      if (fieldId === 'description') fieldId = 'beschreibung';
-
-      const input = document.getElementById(fieldId);
-      if (input) {
-        // Встановлюємо власний текст помилки
-        input.setCustomValidity(err.defaultMessage);
-        // Змушуємо браузер показати це вікно негайно
-        input.reportValidity();
-
-        // Очищуємо помилку, коли користувач почне знову друкувати
-        input.oninput = () => input.setCustomValidity("");
+            // Очищуємо помилку, коли користувач почне знову друкувати
+            input.oninput = () => input.setCustomValidity("");
+          }
+        });
       }
-    });
-  }
-
     }
   } catch (error) {
     console.error("Error:", error);
