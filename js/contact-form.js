@@ -29,7 +29,19 @@ contactForm.addEventListener("submit", async (e) => {
       alert("Дякуємо! Ваша заявка успішно надіслана.");
       contactForm.reset(); // Очищуємо форму
     } else {
-      alert("Помилка при відправці. Спробуйте пізніше.");
+    // Отримуємо JSON з помилками від Spring Boot
+      const errorData = await response.json();
+      
+      // Якщо є масив помилок валідації (стандарт для Spring @Valid)
+      if (errorData.errors && errorData.errors.length > 0) {
+        const errorMessages = errorData.errors
+          .map(err => err.defaultMessage)
+          .join("\n");
+        alert("Помилка валідації:\n" + errorMessages);
+    }
+    else {
+        alert("Помилка: " + (errorData.message || "Спробуйте пізніше."));
+      }
     }
   } catch (error) {
     console.error("Error:", error);
